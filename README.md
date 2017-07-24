@@ -7,7 +7,8 @@ ArrayDeconstructors is a source package which allows you to use new C# 7 deconst
 
 ## Implementation notes
 
-the decision has been made such that there are no safety checks on the deconstruction methods.
+- The decision has been made such that there are no safety checks on the deconstruction methods.
+- For the better user experience and performance reasons we do return the array's tail.
 
 ## Installation
 
