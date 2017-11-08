@@ -2,17 +2,19 @@
 <package>
     <metadata>
         <id>ArrayDeconstructors.Source</id>
-        <version>1.0.2</version>
+        <version>1.0.3</version>
         <authors>Alexander Zaytsev</authors>
         <owners>hazzik</owners>
         <licenseUrl>https://opensource.org/licenses/MIT</licenseUrl>
+        <projectUrl>https://github.com/hazzik/ArrayDeconstructors</projectUrl>
+        <developmentDependency>true</developmentDependency>
         <requireLicenseAcceptance>false</requireLicenseAcceptance>
         <description><![CDATA[ArrayDeconstructors is a source package which allows you to use new C# 7 deconstruction syntax to deconstruct array into variables:
 
     int[] array = <...>;
     var (a,b) = array;]]></description>
         <copyright>Alexander Zaytsev © 2017</copyright>
-        <tags>deconstructor deconstruction array arrays</tags>
+        <tags>deconstructor deconstruction array arrays tuple tuples</tags>
     </metadata>
     <files>
         <file src="ArrayDeconstructors.cs.pp" target="content/App_Code/ArrayDeconstructors.cs.pp" />
