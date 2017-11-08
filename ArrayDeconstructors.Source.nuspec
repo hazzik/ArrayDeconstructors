@@ -1,20 +1,21 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
+<package>
     <metadata>
         <id>ArrayDeconstructors.Source</id>
-        <version>1.0.1</version>
+        <version>1.0.2</version>
         <authors>Alexander Zaytsev</authors>
         <owners>hazzik</owners>
         <licenseUrl>https://opensource.org/licenses/MIT</licenseUrl>
         <requireLicenseAcceptance>false</requireLicenseAcceptance>
-        <description>ArrayDeconstructors is a source package which allows you to use new C# 7 deconstruction syntax to deconstruct array into variables:
+        <description><![CDATA[ArrayDeconstructors is a source package which allows you to use new C# 7 deconstruction syntax to deconstruct array into variables:
 
     int[] array = <...>;
-    var (a,b) = array;</description>
+    var (a,b) = array;]]></description>
         <copyright>Alexander Zaytsev © 2017</copyright>
         <tags>deconstructor deconstruction array arrays</tags>
     </metadata>
     <files>
-        <file src="ArrayDeconstructors.cs.pp" target="content\App_Code\ArrayDeconstructors.cs.pp" />
+        <file src="ArrayDeconstructors.cs.pp" target="content/App_Code/ArrayDeconstructors.cs.pp" />
+        <file src="ArrayDeconstructors.cs.pp" target="contentFiles/cs/any/ArrayDeconstructors.cs.pp" />
     </files>
 </package>
