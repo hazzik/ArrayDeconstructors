@@ -5,6 +5,10 @@ ArrayDeconstructors is a source package which allows you to use new C# 7 deconst
     int[] array = <...>;
     var (a,b) = array;
 
+## Sponsorship
+
+If you like the library please consider [supporting my work](https://github.com/sponsors/hazzik).
+
 ## Implementation notes
 
 - The decision has been made such that there are no safety checks on the deconstruction methods.
