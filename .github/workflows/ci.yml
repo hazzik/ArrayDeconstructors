@@ -1,6 +1,9 @@
 name: CI
 
-on: [push, pull_request]
+on: 
+  push: {}
+#    tags:
+#      - '*'
 
 jobs:
   pack:
@@ -14,4 +17,6 @@ jobs:
       with:
         dotnet-version: 6.0.x
     - name: Pack
-      run: nuget pack
+      run: nuget pack -OutputDirectory ./dist -Version ${{ github.ref_name }}
+    - name: Push
+      run: nuget push dist/*.nupkg ${{ secrets.NUGET_API_KEY }}
